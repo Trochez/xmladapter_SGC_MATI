@@ -76,7 +76,7 @@ public class SpringFoxConfig {
 
     private Predicate userPaths() {
 
-        return regex("/object.*");
+        return regex("/soaptorest.*");
 
     }
 
