@@ -33,6 +33,7 @@ import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
 import org.apache.commons.io.IOUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -136,6 +137,18 @@ public class adaptorapi {
         
         
         return response;
+
+    }
+    
+    /**
+     *
+     * @return
+     */
+    @GetMapping("/test")
+    @ApiOperation(value = "test availability api", notes = "test availability api")
+    public String test(){
+        
+        return "OK test soapadapter";
 
     }
     
